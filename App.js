@@ -17,15 +17,12 @@ const itemSchema = {
 const Item = mongoose.model("Item", itemSchema);
 
 const item1 = new Item({
-    name: "Welcome to CodinGyaan",
+    name: "Food",
 });
 const item2 = new Item({
-    name: "Like ,Share and Subscribe",
+    name: "Lunch",
 });
-const item3 = new Item({
-    name: "Enjoy learning",
-});
-const d = [item1, item2, item3];
+const d = [item1, item2];
 
 // app.get route using async/await
 app.get("/", async (req, res) => {
